@@ -6,6 +6,7 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angul
 export class LoginGuard implements CanActivate {
 
     canActivate(router: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-        return confirm('Are you logged In?');
+        // return confirm('Are you logged In?');
+        return true;
     }
 }

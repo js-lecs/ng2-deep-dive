@@ -1,3 +1,5 @@
+import { DataDrivenComponent } from './pages/forms/data-driven/data-driven.component';
+import { TemplateDrivenComponent } from './pages/forms/template-driven/template-driven.component';
 import { LoginGuard } from './shared/guards/login.guard';
 import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
@@ -15,6 +17,14 @@ const PAGE_ROUTES: Routes = [
     {
         path: 'task-add',
         component: TaskAddComponent
+    },
+    {
+        path: 'template',
+        component: TemplateDrivenComponent
+    },
+     {
+        path: 'data',
+        component: DataDrivenComponent
     }
 ];
 
